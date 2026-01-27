@@ -4,7 +4,11 @@
 
 # ============================================================
 # INSTRUCTOR: Replace this URL with your template repository
+<<<<<<< HEAD
 UPSTREAM_URL="https://github.com/INSTRUCTOR/REPO-NAME.git"
+=======
+UPSTREAM_URL="https://github.com/john-dempsey/web-development-template.git"
+>>>>>>> upstream/main
 # ============================================================
 
 # Check if upstream remote exists, add it if not
@@ -18,7 +22,11 @@ git fetch upstream
 
 echo ""
 echo "Merging updates..."
+<<<<<<< HEAD
 git merge upstream/main -m "Update examples from instructor"
+=======
+git merge upstream/main --allow-unrelated-histories -m "Update examples from instructor"
+>>>>>>> upstream/main
 
 if [ $? -eq 0 ]; then
     echo ""
